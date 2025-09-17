@@ -124,6 +124,7 @@ void AStarfighterPawn::Tick(float DeltaTime)
 		if (HitActor && HitActor->Implements<UTrackableTarget>())
 		{
 			CurrentTarget = HitActor;
+			CurrentTargetLocation = Hit.ImpactPoint;
 			break;
 		}
 	}

@@ -41,6 +41,9 @@ public:
 	USceneComponent* GetMuzzleLocation() const { return MuzzleLocation; }
 
 	AActor* GetCurrentTarget() const { return CurrentTarget; }
+	
+	UFUNCTION(BlueprintCallable, Category = "Targeting")
+	FVector GetCurrentTargetLocation() const { return CurrentTargetLocation; }
 
 protected:
 	// Called when the game starts or when spawned
@@ -53,6 +56,9 @@ protected:
 	class UUserWidget* HUDWidget;
 
 private:
+	// BASIC VARIABLES
+	FVector CurrentTargetLocation;
+	
 	// COMPONENTS
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* SpringArmComponent;
