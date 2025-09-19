@@ -1,4 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+// Original code by Sam Reitich at https://sreitich.github.io/cone-trace/
 
 #pragma once
 
@@ -8,8 +9,6 @@
 #include "Engine/EngineTypes.h"
 #include "CollisionQueryParams.h"
 #include "CollisionLibrary.generated.h"
-
-// Original code by Sam Reitich at https://sreitich.github.io/cone-trace/
 
 namespace EDrawDebugTrace
 {

@@ -1,4 +1,5 @@
 // CollisionLibrary.cpp
+// Original code by Sam Reitich at https://sreitich.github.io/cone-trace/
 
 #include "CollisionLibrary.h"
 #include "DrawDebugHelpers.h" // Add this include for debug drawing
